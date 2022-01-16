@@ -6,7 +6,7 @@
 [![Discord online](https://badgen.net/discord/online-members/S6QaezrCRq?label=Discord)](https://discord.gg/S6QaezrCRq)
 [![GitHub stars](https://img.shields.io/github/stars/EasyAbp/Abp.LoginUi?style=social)](https://www.github.com/EasyAbp/Abp.LoginUi)
 
-An ABP module provides enhanced login pages.
+An ABP module that provides enhanced login pages.
 
 ![demo.gif](/docs/images/WithMicrosoft.apng)
 
