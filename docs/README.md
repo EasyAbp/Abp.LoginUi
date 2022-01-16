@@ -45,4 +45,4 @@ Coming soon. We want to further enhance the login page so that developers can im
 
 ## Road map
 
--[ ] Enhanced local login.
+- [ ] Enhanced local login.
