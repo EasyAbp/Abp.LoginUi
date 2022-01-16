@@ -1,0 +1,47 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "EasyAbp.Abp.LoginUi.TestBase": {
+      "path": "test/EasyAbp.Abp.LoginUi.TestBase/EasyAbp.Abp.LoginUi.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "EasyAbp.Abp.LoginUi.HttpApi.Host": {
+      "path": "host/EasyAbp.Abp.LoginUi.HttpApi.Host/EasyAbp.Abp.LoginUi.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "EasyAbp.Abp.LoginUi.Web": {
+      "path": "src/EasyAbp.Abp.LoginUi.Web/EasyAbp.Abp.LoginUi.Web.abppkg.json",
+      "folder": "src"
+    },
+    "EasyAbp.Abp.LoginUi.Web.Host": {
+      "path": "host/EasyAbp.Abp.LoginUi.Web.Host/EasyAbp.Abp.LoginUi.Web.Host.abppkg.json",
+      "folder": "host"
+    },
+    "EasyAbp.Abp.LoginUi.IdentityServer": {
+      "path": "host/EasyAbp.Abp.LoginUi.IdentityServer/EasyAbp.Abp.LoginUi.IdentityServer.abppkg.json",
+      "folder": "host"
+    },
+    "EasyAbp.Abp.LoginUi.Host.Shared": {
+      "path": "host/EasyAbp.Abp.LoginUi.Host.Shared/EasyAbp.Abp.LoginUi.Host.Shared.abppkg.json",
+      "folder": "host"
+    },
+    "EasyAbp.Abp.LoginUi.Web.Unified": {
+      "path": "host/EasyAbp.Abp.LoginUi.Web.Unified/EasyAbp.Abp.LoginUi.Web.Unified.abppkg.json",
+      "folder": "host"
+    },
+    "EasyAbp.Abp.LoginUi.Blazor.Host": {
+      "path": "host/EasyAbp.Abp.LoginUi.Blazor.Host/EasyAbp.Abp.LoginUi.Blazor.Host.abppkg.json",
+      "folder": "host"
+    },
+    "EasyAbp.Abp.LoginUi.Blazor.Server.Host": {
+      "path": "host/EasyAbp.Abp.LoginUi.Blazor.Server.Host/EasyAbp.Abp.LoginUi.Blazor.Server.Host.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

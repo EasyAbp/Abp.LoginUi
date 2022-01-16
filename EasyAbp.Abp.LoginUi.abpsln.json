@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "EasyAbp.Abp.LoginUi": {
+      "path": "EasyAbp.Abp.LoginUi.abpmdl.json"
+    }
+  }
+}
