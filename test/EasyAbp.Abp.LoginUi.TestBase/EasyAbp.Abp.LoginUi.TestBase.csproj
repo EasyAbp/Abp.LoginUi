@@ -3,7 +3,7 @@
   <Import Project="..\..\common.props" />
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <RootNamespace>EasyAbp.Abp.LoginUi</RootNamespace>
   </PropertyGroup>
 
@@ -18,7 +18,6 @@
     <PackageReference Include="Volo.Abp.Authorization" Version="$(AbpVersion)" />
     <PackageReference Include="Volo.Abp.Guids" Version="$(AbpVersion)" />
     <PackageReference Include="Volo.Abp.TestBase" Version="$(AbpVersion)" />
-    <ProjectReference Include="..\..\src\EasyAbp.Abp.LoginUi.Shared\EasyAbp.Abp.LoginUi.Shared.csproj" />
   </ItemGroup>
 
 </Project>

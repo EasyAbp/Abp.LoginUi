@@ -3,7 +3,7 @@
   <Import Project="..\..\common.props" />
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <RootNamespace>EasyAbp.Abp.LoginUi</RootNamespace>
     <PreserveCompilationReferences>true</PreserveCompilationReferences>
     <UserSecretsId>EasyAbp.Abp.LoginUi-c2d31439-b723-48e2-b061-5ebd7aeb6010</UserSecretsId>
@@ -12,13 +12,13 @@
   <ItemGroup>
     <PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
     <PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
-    <PackageReference Include="Microsoft.AspNetCore.DataProtection.StackExchangeRedis" Version="6.0.*" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.*">
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.StackExchangeRedis" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Volo.Abp.AspNetCore.Authentication.JwtBearer" Version="$(AbpVersion)" />
-    <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite" Version="1.0.0" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite" Version="2.0.0-*" />
     <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="$(AbpVersion)" />
     <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy" Version="$(AbpVersion)" />
     <PackageReference Include="Volo.Abp.Autofac" Version="$(AbpVersion)" />
@@ -52,14 +52,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="6.0.*" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="6.0.*" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.*" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.Twitter" Version="6.0.*" />
-    <PackageReference Include="AspNet.Security.OAuth.Instagram" Version="6.0.*" />
-    <PackageReference Include="AspNet.Security.Oauth.Github" Version="6.0.*" />
-    <PackageReference Include="AspNet.Security.OAuth.Weixin" Version="6.0.*" />
-    <PackageReference Include="AspNet.Security.OAuth.QQ" Version="6.0.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Twitter" Version="7.0.0" />
+    <PackageReference Include="AspNet.Security.OAuth.Instagram" Version="7.0.0" />
+    <PackageReference Include="AspNet.Security.Oauth.Github" Version="7.0.0" />
+    <PackageReference Include="AspNet.Security.OAuth.Weixin" Version="7.0.0" />
+    <PackageReference Include="AspNet.Security.OAuth.QQ" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>

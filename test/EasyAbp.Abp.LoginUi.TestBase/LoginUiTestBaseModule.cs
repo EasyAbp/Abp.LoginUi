@@ -11,8 +11,7 @@ namespace EasyAbp.Abp.LoginUi;
 [DependsOn(
     typeof(AbpAutofacModule),
     typeof(AbpTestBaseModule),
-    typeof(AbpAuthorizationModule),
-    typeof(AbpLoginUiSharedModule)
+    typeof(AbpAuthorizationModule)
     )]
 public class LoginUiTestBaseModule : AbpModule
 {
