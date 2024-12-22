@@ -3,7 +3,7 @@
     <Import Project="..\..\common.props" />
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net9.0</TargetFramework>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
         <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
         <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
@@ -12,16 +12,16 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Blazorise.Bootstrap5" Version="1.5.2" />
-        <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.5.2" />
-        <PackageReference Include="Serilog.AspNetCore" Version="8.0.0" />
-        <PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4" />
+        <PackageReference Include="Blazorise.Bootstrap5" Version="1.6.2" />
+        <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.6.2" />
+        <PackageReference Include="Serilog.AspNetCore" Version="8.0.2" />
+        <PackageReference Include="Serilog.Sinks.Async" Version="2.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0" />
     </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="Volo.Abp.EntityFrameworkCore.SqlServer" Version="$(AbpVersion)" />
-        <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite" Version="3.3.2" />
+        <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite" Version="4.0.3" />
         <PackageReference Include="Volo.Abp.Autofac" Version="$(AbpVersion)" />
         <PackageReference Include="Volo.Abp.Swashbuckle" Version="$(AbpVersion)" />
         <PackageReference Include="Volo.Abp.AspNetCore.Authentication.JwtBearer" Version="$(AbpVersion)" />
@@ -48,14 +48,14 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="8.0.0" />
-        <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="8.0.0" />
-        <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.0.0" />
-        <PackageReference Include="Microsoft.AspNetCore.Authentication.Twitter" Version="8.0.0" />
-        <PackageReference Include="AspNet.Security.OAuth.Instagram" Version="8.0.0" />
-        <PackageReference Include="AspNet.Security.Oauth.Github" Version="8.0.0" />
-        <PackageReference Include="AspNet.Security.OAuth.Weixin" Version="8.0.0" />
-        <PackageReference Include="AspNet.Security.OAuth.QQ" Version="8.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="9.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="9.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="9.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.Twitter" Version="9.0.0" />
+        <PackageReference Include="AspNet.Security.OAuth.Instagram" Version="9.0.0" />
+        <PackageReference Include="AspNet.Security.OAuth.Github" Version="9.0.0" />
+        <PackageReference Include="AspNet.Security.OAuth.Weixin" Version="9.0.0" />
+        <PackageReference Include="AspNet.Security.OAuth.QQ" Version="9.0.0" />
     </ItemGroup>
 
     <ItemGroup>
