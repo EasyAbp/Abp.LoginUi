@@ -10,7 +10,7 @@ using Volo.Abp.AspNetCore.Components.Web.BasicTheme.Themes.Basic;
 using Volo.Abp.AspNetCore.Components.Web.Theming.Routing;
 using Volo.Abp.AspNetCore.Components.WebAssembly.BasicTheme;
 using Volo.Abp.Autofac.WebAssembly;
-using Volo.Abp.AutoMapper;
+using Volo.Abp.Mapperly;
 using Volo.Abp.Identity.Blazor.WebAssembly;
 using Volo.Abp.Modularity;
 using Volo.Abp.SettingManagement.Blazor.WebAssembly;
@@ -20,7 +20,7 @@ using Volo.Abp.UI.Navigation;
 namespace EasyAbp.Abp.LoginUi.Blazor.Host;
 
 [DependsOn(
-    typeof(AbpAutoMapperModule),
+    typeof(AbpMapperlyModule),
     typeof(AbpAutofacWebAssemblyModule),
     typeof(AbpAspNetCoreComponentsWebAssemblyBasicThemeModule),
     typeof(AbpAccountApplicationContractsModule),
@@ -41,7 +41,6 @@ public class LoginUiBlazorHostModule : AbpModule
         ConfigureRouter(context);
         ConfigureUI(builder);
         ConfigureMenu(context);
-        ConfigureAutoMapper(context);
     }
 
     private void ConfigureRouter(ServiceConfigurationContext context)
@@ -89,11 +88,4 @@ public class LoginUiBlazorHostModule : AbpModule
         });
     }
 
-    private void ConfigureAutoMapper(ServiceConfigurationContext context)
-    {
-        Configure<AbpAutoMapperOptions>(options =>
-        {
-            options.AddMaps<LoginUiBlazorHostModule>();
-        });
-    }
 }

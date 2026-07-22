@@ -20,7 +20,7 @@ using Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite;
 using Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared;
 using Volo.Abp.AspNetCore.Serilog;
 using Volo.Abp.Autofac;
-using Volo.Abp.AutoMapper;
+using Volo.Abp.Mapperly;
 using Volo.Abp.Caching;
 using Volo.Abp.Caching.StackExchangeRedis;
 using Volo.Abp.FeatureManagement;
@@ -56,7 +56,7 @@ namespace EasyAbp.Abp.LoginUi;
     typeof(AbpPermissionManagementHttpApiClientModule),
     typeof(AbpAspNetCoreSerilogModule),
     typeof(AbpSwashbuckleModule),
-    typeof(AbpAutoMapperModule)
+    typeof(AbpMapperlyModule)
     )]
 public class LoginUiWebHostModule : AbpModule
 {
@@ -81,7 +81,7 @@ public class LoginUiWebHostModule : AbpModule
         ConfigureCache(configuration);
         ConfigureUrls(configuration);
         ConfigureAuthentication(context, configuration);
-        ConfigureAutoMapper(context);
+        context.Services.AddMapperlyObjectMapper<LoginUiWebHostModule>();
         ConfigureVirtualFileSystem(hostingEnvironment);
         ConfigureSwaggerServices(context.Services);
         ConfigureMultiTenancy();
@@ -148,15 +148,6 @@ public class LoginUiWebHostModule : AbpModule
                 options.Scope.Add("phone");
                 options.Scope.Add("LoginUi");
             });
-    }
-
-    private void ConfigureAutoMapper(ServiceConfigurationContext context)
-    {
-        context.Services.AddAutoMapperObjectMapper();
-        Configure<AbpAutoMapperOptions>(options =>
-        {
-            options.AddMaps<LoginUiWebHostModule>();
-        });
     }
 
     private void ConfigureVirtualFileSystem(IWebHostEnvironment hostingEnvironment)
